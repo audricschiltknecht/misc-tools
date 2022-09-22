@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Stop on errors
+set -e
+
+cd "$(dirname "$0")/.."
+
+pip install pre-commit
+
+pre-commit install --install-hooks
